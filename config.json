@@ -1,0 +1,38 @@
+{
+  "app_name": "Bijan AI RAG Chatbot",
+  "theme": {
+    "default": "dark",
+    "allow_switch": true,
+    "glassmorphism": true,
+    "animations": true,
+    "primary_color": "#7C3AED",
+    "secondary_color": "#0EA5E9",
+    "background": "#0F172A",
+    "text": "#F8FAFC"
+  },
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "max_tokens": 2048,
+    "stream": true
+  },
+  "embedding": {
+    "model": "BAAI/bge-small-en-v1.5"
+  },
+  "retriever": {
+    "top_k": 5,
+    "score_threshold": 0.45
+  },
+  "chunking": {
+    "chunk_size": 800,
+    "chunk_overlap": 150
+  },
+  "parser": {
+    "use_llamaparse": true
+  },
+  "upload": {
+    "multiple": true,
+    "max_files": 50
+  }
+}
